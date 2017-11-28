@@ -1,0 +1,228 @@
+.jumbotron {
+	background: 
+		linear-gradient(
+			rgba(0, 0, 30, 0.6),
+			rgba(0, 0, 30, 0.6)
+		),
+		url(../images/background.jpg);
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+	padding-top: 50px;
+	position: relative;
+	color: white;
+}
+
+h3 {
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 30px;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 36px;
+	height: 5px;
+	margin: 5px 0;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: background 0.5s; 
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+}
+
+#menu-btn:hover .bar1, #menu-btn:hover .bar2, #menu-btn:hover .bar3 {
+	background-color: white;
+}
+
+#menu-btn {
+	position: fixed;
+	background: none;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	padding: 20px;
+	width: 66px;
+	z-index: 1;
+}
+
+.overlay {
+	height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top:  0;
+    background-color: rgba(0,0,0, 0.6); 
+    overflow-x: hidden; 
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.overlay-content {
+	float: center;
+	position: relative;
+    margin-top: 69px; 
+    font-size: 25px;
+}
+
+.overlay-content a {
+	display: inline-block;
+}
+
+.overlay a {
+	text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block; 
+    transition: 0.3s; 
+}
+
+.overlay span {
+    padding: 15px;
+    color: white;
+    display: block; 
+    transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: rgb(220, 20, 60);
+}
+
+.overlay .closebtn:hover, .overlay .closebtn:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    top: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+#learn-more {
+	background: rgb(220, 20, 60);
+	border: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+#learn-more:hover {
+	background: rgb(100, 10, 10);
+}
+
+#header {
+	text-align: center;
+	padding-top: 8%;
+}
+
+.btn-default {
+	margin-top: 20px;
+	font-size: 12px;
+	padding: 12px 15px;
+}
+
+#header h2 {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#header p {
+	margin: 10px 69px;
+}
+
+.tab-menu-obj {
+	opacity: 0.5;
+}
+
+.active {
+	opacity: 1.0;
+	text-decoration: none;
+}
+
+.tab-menu-obj:hover {
+	opacity: 1.0;
+	text-decoration: none;
+}
+
+#tab-menu {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	margin-top: 5%;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	float: bottom;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+#tab-menu a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    #header h2 {
+    	font-size: 26px;
+    }
+
+    #header h3 {
+    	font-size: 22px;x
+    }
+
+    #header p {
+    	font-size: 20px;
+    }
+
+    #tab-menu {
+    	padding: 0;
+    }
+    #tab-menu img {
+		width: 0;
+		height: 0;
+	}
+	#tab-menu h3 {
+		font-size: 20px;
+		margin: 0;
+	}
+	#contact {
+		margin-bottom: 10px;
+	}
+	.btn-default {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    #header h2 {
+    	font-size: 22px;
+    }
+
+    #header h3 {
+    	font-size: 18px;x
+    }
+
+    #header p {
+    	font-size: 16px;
+    }
+
+    #tab-menu {
+    	padding: 0;
+    }
+    #tab-menu img {
+		width: 0;
+		height: 0;
+	}
+	#tab-menu h3 {
+		font-size: 16px;
+		margin: 0;
+	}
+	#contact {
+		margin-bottom: 10px;
+	}
+	.btn-default {
+		font-size: 8px;
+	}
+}
+
