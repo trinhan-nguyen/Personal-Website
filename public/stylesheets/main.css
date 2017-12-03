@@ -27,7 +27,7 @@
 
 #menu-btn:hover .bar1, #menu-btn:hover .bar2, #menu-btn:hover .bar3 {
 	background-color: rgba(0,0,0, 0.8);
-	transform: translateX(5px);
+	transform: translateX(10px);
 }
 
 #menu-btn {
@@ -56,24 +56,25 @@
     text-align: center;
     white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
 }
 
 .overlay-content {
 	float: center;
 	position: relative;
     margin-top: 69px; 
-    font-size: 25px;
 }
 
 .overlay-content a {
 	display: inline-block;
 	border-bottom: 0.5px solid rgba(90, 90, 90, 0.8);
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .overlay a {
 	text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     color: white;
     display: block; 
     transition: 0.3s; 
@@ -83,7 +84,8 @@
     padding: 15px;
     color: white;
     display: block; 
-    transition: 0.3s; 
+    transition: 0.3s;
+    font-size: 14px; 
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -96,9 +98,8 @@
 }
 
 .overlay .closebtn {
-    top: 30px;
+    top: 50px;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 18px;
 }
 
 #learn-more {
@@ -262,11 +263,13 @@
 }
 
 #showcase {
-	margin: 50px 0;
+	margin: 0;
 	width: 100%;
 	padding: 12%;
-	padding-bottom: 0;
 	background-color: #ededed;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 150px;
 }
 
 .card-img-top {
@@ -276,6 +279,65 @@
 .card-block {
 	margin: 10px;
 	height: auto;
+}
+
+#projects-sub-title {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	border-bottom: 3px solid #d1d1d1;
+	color: #d1d1d1;
+	font-size: 18px;
+	margin: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+#projects-title {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+#upper-footer {
+	background-color: #3a4147;
+	text-align: center;
+	padding: 100px 69px;
+}
+
+#upper-footer h4 {
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	opacity: 0.36;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.white-paragraphs {
+	line-height: 21px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	float: center;
+	max-width: 360px;
+	margin: auto;
+}
+
+.white-paragraphs a {
+	color: white;
+	opacity: 0.36;
+}
+
+.white-paragraphs a:hover {
+	opacity: 1.0;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -320,14 +382,6 @@
 		margin-bottom: 10px;
 	}
 
-	.overlay-content a {
-		font-size: 18px;
-	}
-
-	.overlay .closebtn {
-		font-size: 16px;
-	}
-
 	#showcase {
 		margin: auto;
 		margin-top: 20px;
@@ -364,11 +418,11 @@
 	}
 
 	.overlay-content a {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.overlay .closebtn {
-		font-size: 11px;
+		font-size: 12px;
 		padding-left: 1px;
 	}
 
@@ -412,12 +466,18 @@
 
 #copyright {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 0;
 }
 
 #copyright .address {
 	margin-bottom: 0;
 	font-size: 12px;
+}
+
+#copyright p {
+	margin-bottom: 5px;
+	font-size: 14px;
 }
 
 #footer-contact i:hover {
