@@ -16,6 +16,11 @@ aboutMe.classList.add("active");
 
 // Animation in
 
+AOS.init({
+  duration: 1800,
+  easing: 'ease-in-out-back'
+});
+
 function displayNone() {
 	section.style.display = "none";
 	intro.style.display = "none";
@@ -81,7 +86,7 @@ function animate() {
 	timeouts.push(setTimeout(function() {
 		removeAnimationClass();
 		headerOverlay.classList.remove("overlay-in");
-	}, 2400));
+	}, 2200));
 }
 
 $("#about-me").click(function() {

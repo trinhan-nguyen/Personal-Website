@@ -1,8 +1,8 @@
 .jumbotron {
 	background: 
 		linear-gradient(
-			rgba(0, 0, 30, 0.6),
-			rgba(0, 0, 30, 0.6)
+			rgba(10, 10, 30, 0.6),
+			rgba(10, 10, 30, 0.6)
 		),
 		url(../images/background.jpg);
 	background-size: cover;
@@ -19,14 +19,15 @@
 	height: 5px;
 	margin: 5px 0;
 	border-radius: 25px;
-	background-color: rgba(255, 255, 255, 0.6);
-	transition: background 0.5s; 
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
+	background-color: rgba(200, 200, 200, 0.6);
+	transition: 0.5s; 
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
 }
 
 #menu-btn:hover .bar1, #menu-btn:hover .bar2, #menu-btn:hover .bar3 {
-	background-color: white;
+	background-color: rgba(0,0,0, 0.8);
+	transform: translateX(5px);
 }
 
 #menu-btn {
@@ -49,7 +50,7 @@
     z-index: 1; 
     left: 0;
     top:  0;
-    background-color: rgba(0,0,0, 0.6); 
+    background-color: rgba(0,0,0, 0.8); 
     overflow-x: hidden; 
     transition: 0.3s;
     text-align: center;
@@ -114,7 +115,7 @@
 
 #header {
 	text-align: center;
-	padding-top: 8%;
+	padding-top: 15%;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -146,13 +147,13 @@
 
 .btn-in {
 	animation-name: btn-in;
-	animation-duration: 0.7s;
+	animation-duration: 0.5s;
 	animation-timing-function: ease-in;
 }
 
 .overlay-in {
 	animation-name: overlay-in;
-	animation-duration: 0.6s;
+	animation-duration: 0.8s;
 }
 
 @keyframes content-in {
@@ -168,18 +169,20 @@
 
 @keyframes btn-in {
 	from {
-		font-size: 16px;
-		opacity: 0.3;
+		font-size: 20px;
+		opacity: 0;
+	    transform: rotate(-30deg);
 	}
 	to {
 		font-size: 12px;
 		opacity: 1.0;
+	    transform: none;
 	}
 }
 
 @keyframes overlay-in {
 	0% {background: transparent;}
-	50% {background: rgba(0, 0, 0, 0.9)}
+	50% {background: rgba(0, 0, 0, 0.8)}
 	100% {background: transparent}
 }
 
@@ -189,6 +192,9 @@
 	font-weight: 800;
 	margin-bottom: 36px;
 	font-size: 36px;
+	text-shadow: 0px 4px 3px rgba(30, 30, 50, 0.8),
+			 0px 8px 12px rgba(30, 30, 50, 0.8),
+			 0px 18px 22px rgba(30, 30, 50, 0.8);
 }
 
 #detail {
@@ -199,6 +205,8 @@
 .tab-menu-obj {
 	opacity: 0.5;
 	transition: 0.5s;
+	padding: 0;
+	float: left;
 }
 
 .active {
@@ -210,6 +218,9 @@
 .tab-menu-obj:hover {
 	opacity: 1.0;
 	text-decoration: none;
+	-ms-flex: 0 0 100%;
+       	flex: 0 0 100%;
+    max-width: 100%;
 }
 
 #tab-menu {
@@ -219,10 +230,7 @@
 	bottom: 0;
 	width: 100%;
 	margin: 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 120px;
-	padding-right: 120px;
+	padding: 30px 180px;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
@@ -253,6 +261,23 @@
 	letter-spacing: 3px;
 }
 
+#showcase {
+	margin: 50px 0;
+	width: 100%;
+	padding: 12%;
+	padding-bottom: 0;
+	background-color: #ededed;
+}
+
+.card-img-top {
+	box-shadow: 0 1px 3px #888888;
+}
+
+.card-block {
+	margin: 10px;
+	height: auto;
+}
+
 @media screen and (max-width: 992px) {
     #intro {
     	font-size: 30px;
@@ -280,13 +305,13 @@
     #tab-menu img {
 		width: 30px;
 		height: 30px;
-		margin: 10px 30px;
+		margin: 5px 30px;
 	}
 
 	#tab-menu-header {
 		font-size: 16px;
 		margin: 10px;
-		margin-left: 33%;
+		margin-left: 36%;
 		width: auto;
 		float: center;
 	}
@@ -301,6 +326,12 @@
 
 	.overlay .closebtn {
 		font-size: 16px;
+	}
+
+	#showcase {
+		margin: auto;
+		margin-top: 20px;
+		padding: 15px;
 	}
 }
 
@@ -324,12 +355,12 @@
     #tab-menu img {
 		width: 25px;
 		height: 25px;
-		margin: 5px 20px;
+		margin: 2.5px 20px;
 	}
 
 	#tab-menu-header {
 		font-size: 14px;
-		margin: 5px;
+		margin: 10px;
 	}
 
 	.overlay-content a {
@@ -340,6 +371,26 @@
 		font-size: 11px;
 		padding-left: 1px;
 	}
+
+	.bar1, .bar2, .bar3 {
+		width: 28px;
+		height: 4px;
+		margin: 4px 0;
+		padding: 0;
+	}
+
+	#menu-btn {
+		margin: 0;
+		padding: 8px;
+	}
+	#showcase {
+		padding: 5px;
+	}
+
+  	.card-columns {
+	    -webkit-column-count: 1;
+	            column-count: 1;
+  	}
 }
 
 #footer {
@@ -380,3 +431,4 @@
 	color: rgb(105, 105, 105);
 	transition: 0.5s;
 }
+
