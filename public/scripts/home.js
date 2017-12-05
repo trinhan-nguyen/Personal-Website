@@ -1,7 +1,7 @@
 //****************
 // Initial config
 //****************
-var timeouts = [];
+var timeouts = [],
 	aboutMe = $("#about-me").get(0),
 	section = $("#section").get(0),
 	intro = $("#intro").get(0),
@@ -10,11 +10,39 @@ var timeouts = [];
 	projects = $("#projects").get(0),
 	inspiration = $("#inspiration").get(0),
 	contact = $("#contact").get(0),
-	headerOverlay = $(".header-overlay").get(0);
+	headerOverlay = $(".header-overlay").get(0),
+	headerData = [
+		{
+			section: "About me",
+			intro: "Hello. I'm Nhan Nguyen",
+			detail: "Warm greetings to you all from Nhan Nguyen",
+			button: "Learn more"
+		},
+		{
+			section: "Projects",
+			intro: "A Little Note About My Projects",
+			detail: "These projects are made while I was dabbling in programming",
+			button: "Wander through"
+		},
+		{
+			section: "Inspiration?",
+			intro: "Seeking for inspiration?",
+			detail: "Everyone was once a novice. Let's explore",
+			button: "Overview of my work"
+		},
+		{
+			section: "Contact",
+			intro: "Need someone for your projects?",
+			detail: "I'm available for work. Let's get down to business",
+			button: "Get in touch"
+		}
+	];
 
 aboutMe.classList.add("active");
 
-// Animation in
+//***************
+//  Animation in
+//***************
 
 AOS.init({
   duration: 1800,
@@ -44,34 +72,8 @@ function clearTimeOut() {
 	removeAnimationClass();
 }
 
+updateText(0);
 animate();
-
-//**********************
-// The menu on the side
-//**********************
-var menuOn = false;
-
-$("#menu-btn").hover(
-	function() {
-		$("#menu").get(0).style.width = "10px";
-	}, function() {
-		if (!menuOn) {
-			$("#menu").get(0).style.width = "0";
-		}
-	}
-);
-
-$("#menu-btn").click(function() {
-	$("#menu").get(0).style.width = "36%";
-	this.style.display = "none";
-	menuOn = true;
-});
-
-$(".closebtn").click(function() {
-	$("#menu").get(0).style.width = "0";
-	$("#menu-btn").get(0).style.display = "block";
-	menuOn = false;
-});
 
 //**********************
 //  Header in jumbotron
@@ -103,6 +105,14 @@ function animate() {
 	}, 2200));
 }
 
+function updateText(fromSection) {
+	var textData = headerData[fromSection];
+	$("#learn-more").text(textData.button);
+	$("#section").text(textData.section);
+	$("#intro").text(textData.intro);
+	$("#detail").text(textData.detail);
+}
+
 $("#about-me").click(function() {
 	if ($(this).hasClass("active")) {return;}
 	animate();
@@ -110,11 +120,7 @@ $("#about-me").click(function() {
 	projects.classList.remove("active");
 	inspiration.classList.remove("active");
 	contact.classList.remove("active");
-	$("#learn-more").text("LEARN MORE");
-	$("#section").text("About Me");
-	$("#intro").text("Hello. I'm Nhan Nguyen");
-	$("#detail").text("Warm greetings to you all from a student" +  
-		" at University of Waterloo");
+	updateText(0);
 });
 
 $("#projects").click(function() {
@@ -124,9 +130,7 @@ $("#projects").click(function() {
 	projects.classList.add("active");
 	inspiration.classList.remove("active");
 	contact.classList.remove("active");
-	$("#section").text("Projects");
-	$("#intro").text("A Little Note About My Projects");
-	$("#detail").text("");
+	updateText(1);
 });
 
 $("#inspiration").click(function() {
@@ -136,10 +140,7 @@ $("#inspiration").click(function() {
 	projects.classList.remove("active");
 	inspiration.classList.add("active"); 
 	contact.classList.remove("active");
-	$("#learn-more").text("OVERVIEW OF MY WORK");
-	$("#section").text("Inspiration?");
-	$("#intro").text("Seeking For Inspiration?");
-	$("#detail").text("");
+	updateText(2);
 });
 
 $("#contact").click(function() {
@@ -149,10 +150,7 @@ $("#contact").click(function() {
 	projects.classList.remove("active");
 	inspiration.classList.remove("active");
 	contact.classList.add("active");
-	$("#learn-more").text("GET IN TOUCH");
-	$("#section").text("Contact");
-	$("#intro").text("If You Need Me");
-	$("#detail").text("");
+	updateText(3);
 });
 
 
