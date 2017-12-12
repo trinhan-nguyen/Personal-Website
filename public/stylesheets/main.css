@@ -327,7 +327,7 @@
 	url(../images/profile.jpg);
 	background-size: cover;
 	background-position: top;
-	padding: 100px 20px;
+	padding: 80px 20px;
 	padding-right: 45%;
 	font-family: 'Raleway', sans-serif;
 }
@@ -374,9 +374,9 @@
 	position: absolute;
 	right: 5%;
 	bottom: 10%;
-	width: 30vw;
+	width: 60vh;
 	height: 60vh;
-	background: url(../images/profile.jpg);
+	background: url(../images/dino.jpg);
 	background-size: cover;
 }
 
