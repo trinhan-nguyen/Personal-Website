@@ -16,25 +16,29 @@ var timeouts = [],
 			section: "About me",
 			intro: "Hello. I'm Nhan Nguyen",
 			detail: "Warm greetings to you all from Nhan Nguyen",
-			button: "Learn more"
+			button: "Learn more",
+			href: "/about"
 		},
 		{
 			section: "Projects",
 			intro: "A Little Note About My Projects",
 			detail: "These projects are made while I was dabbling in programming",
-			button: "Wander through"
+			button: "Wander through",
+			href: "/projects"
 		},
 		{
 			section: "Inspiration?",
 			intro: "Seeking for inspiration?",
 			detail: "Everyone was once a novice. Let's explore",
-			button: "Overview of my work"
+			button: "Overview of my work",
+			href: "/projects"
 		},
 		{
 			section: "Contact",
 			intro: "Need someone for your projects?",
 			detail: "I'm available for work. Let's get down to business",
-			button: "Get in touch"
+			button: "Get in touch",
+			href: "/contact"
 		}
 	];
 
@@ -106,11 +110,12 @@ function animate() {
 }
 
 function updateText(fromSection) {
-	var textData = headerData[fromSection];
-	$("#learn-more").text(textData.button);
-	$("#section").text(textData.section);
-	$("#intro").text(textData.intro);
-	$("#detail").text(textData.detail);
+	var data = headerData[fromSection];
+	$("#learn-more").attr("href", data.href);
+	$("#learn-more").text(data.button);
+	$("#section").text(data.section);
+	$("#intro").text(data.intro);
+	$("#detail").text(data.detail);
 }
 
 $("#about-me").click(function() {

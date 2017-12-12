@@ -4,7 +4,6 @@ var Project = require("./models/project"),
 	bodyParser = require("body-parser"),
 	projectData = require("./seeds/project"),
 	headerData = require("./seeds/header"),
-	unique = require("uniq");
 	app = express();
 
 // App config
