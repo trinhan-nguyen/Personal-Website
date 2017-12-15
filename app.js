@@ -3,7 +3,6 @@ var Project = require("./models/project"),
 	mongoose = require("mongoose"),
 	bodyParser = require("body-parser"),
 	projectData = require("./seeds/project"),
-	headerData = require("./seeds/header"),
 	app = express();
 
 // App config

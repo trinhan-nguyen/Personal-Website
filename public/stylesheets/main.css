@@ -7,7 +7,7 @@
 		url(../images/backgroundOthers.jpg);
 	background-size: cover;
 	background-position: bottom;
-	height: 85vh;
+	height: 90vh;
 	margin: 0;
 	padding:0;
 	position: relative;
@@ -190,7 +190,6 @@
 
 /* End */
 
-
 .bar1, .bar2, .bar3 {
 	width: 36px;
 	height: 5px;
@@ -287,7 +286,8 @@
 }
 
 #upper-footer h4 {
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	opacity: 0.36;
@@ -319,20 +319,32 @@
 
 #about-me-parital {
 	height: 100vh;
-	color: black;
+	color: black; 
 	background: linear-gradient(
 		180deg, 
 		hsla(0, 0%, 100%, .9), 
 		hsla(0, 0%, 100%, .8)), 
 	url(../images/profile.jpg);
-	background-size: cover;
+	background-size: 900px 1000px;
+	background-repeat: no-repeat;
 	background-position: top;
-	padding: 80px 20px;
-	padding-right: 45%;
+	padding: 120px 0;
 	font-family: 'Raleway', sans-serif;
 }
 
-#about-section {
+#profile-container {
+	margin: auto;
+	max-width: 992px;
+	width: 100%;
+	padding-right: 36%;
+}
+
+#profile-block {
+	width: 450px;
+	float: left;
+}
+
+.about-section {
 	display: inline-block;
 	color: #d1d1d1;
 	margin: 10px 0;
@@ -344,7 +356,7 @@
 	position: relative;
 }
 
-#my-name {
+.bold-section {
 	margin-top: 9px;
 	color: black;
 	font-weight: 800;
@@ -358,7 +370,7 @@
 	margin-top: 36px;
 	margin-bottom: 30px;
 	color: #9c9c9c;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 300;
 }
@@ -367,7 +379,7 @@
 	margin-top: 0;
 	margin-bottom: 5px;
 	line-height: 23px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 #profile-img {
@@ -378,6 +390,26 @@
 	height: 60vh;
 	background: url(../images/dino.jpg);
 	background-size: cover;
+}
+
+#about-prog-container {
+	height: 100vh;
+	color: black; 
+	background: #ededed;
+	padding: 120px 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#about-prog-block {
+	margin: auto;
+	max-width: 992px;
+	width: 100%;
+	padding-left: 36%;
+}
+
+#about-prog-text {
+	width: 450px;
+	float: right;
 }
 
 #contact-partial {
@@ -567,6 +599,10 @@
 	#contact {
 		margin-bottom: 10px;
 	}
+
+	#profile-img {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -631,12 +667,48 @@
 		font-size: 36px;
 	}
 
-	#about-section {
+	#profile-container {
+		padding-right: 15px;
+	}
+
+	#about-prog-block {
+		padding-left: 15px;
+	}
+
+
+	.about-section {
 		font-size: 14px;
 	}
 
-	#my-name {
-		font-size: 30px;
+	.bold-section {
+		font-size: 27px;
+	}
+
+	#about-me-parital {
+		padding-top: 80px;
+	}
+
+	#intro-para {
+		font-size: 16px;
+	}
+
+	#main-para {
+		font-size: 14px;
+	}
+
+	#profile-block {
+		float: none;
+		text-align: center;
+	}
+
+	#about-prog-text {
+		float: none;
+		text-align: center;
+	}
+
+	#upper-footer {
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 
