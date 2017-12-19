@@ -558,7 +558,7 @@
 	letter-spacing: 3px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     #intro {
     	font-size: 30px;
     }
@@ -605,7 +605,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #intro {
     	font-size: 25px;
     }
