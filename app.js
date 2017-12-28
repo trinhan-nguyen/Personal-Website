@@ -44,6 +44,11 @@ app.get("/contact", function(req, res) {
 	res.render("./contact/index");
 });
 
+// Catch unknown pages
+app.get("/*", function(req, res) {
+	res.render("./pnf/index");
+});
+
 // Server config
 app.listen(3000, function() {
 	console.log("Server started");
