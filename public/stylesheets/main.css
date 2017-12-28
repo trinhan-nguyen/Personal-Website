@@ -226,7 +226,7 @@
     z-index: 1; 
     left: 0;
     top:  0;
-    background-color: rgba(0,0,0, 0.8); 
+    background-color: rgba(0,0,0, 0.60); 
     overflow-x: hidden; 
     transition: 0.3s;
     text-align: center;
@@ -239,11 +239,12 @@
 	float: center;
 	position: relative;
     margin-top: 69px; 
+    color: white;
 }
 
 .overlay-content a {
 	display: inline-block;
-	border-bottom: 0.5px solid rgba(90, 90, 90, 0.8);
+	border-bottom: 0.5px solid rgba(90, 90, 90, 0.88);
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -251,9 +252,12 @@
 .overlay a {
 	text-decoration: none;
     padding: 20px;
-    color: white;
     display: block; 
     transition: 0.3s; 
+}
+
+.white-text {
+	color: white;
 }
 
 .overlay span {
@@ -266,7 +270,12 @@
 
 .overlay a:hover, .overlay a:focus {
     color: rgb(220, 20, 60);
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-active {
+	color: rgb(220, 20, 60);
+    background: rgba(200, 200, 200, 0.1);
 }
 
 .overlay .closebtn:hover, .overlay .closebtn:focus {
