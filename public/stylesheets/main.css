@@ -360,7 +360,7 @@
 	margin-top: 9px;
 	color: black;
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 36px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 30px;
@@ -386,10 +386,28 @@
 	position: absolute;
 	right: 5%;
 	bottom: 10%;
-	width: 60vh;
-	height: 60vh;
+	width: 58vh;
+	height: 58vh;
 	background: url(../images/dino.jpg);
 	background-size: cover;
+}
+
+#about-prog-text {
+	width: 450px;
+	float: right;
+}
+
+#programming-img {
+	float: left;
+	margin: 10px 10px;	
+	margin-left: 50px;
+	width: 360px;
+	height: 300px;
+	border: solid white 5px;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+	background: url(../images/programming.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 #about-prog-container {
@@ -404,12 +422,9 @@
 	margin: auto;
 	max-width: 992px;
 	width: 100%;
-	padding-left: 36%;
-}
-
-#about-prog-text {
-	width: 450px;
-	float: right;
+	height: 100%;
+	padding: 0 15px;
+	padding-right: 5px;
 }
 
 #contact-partial {
@@ -601,7 +616,20 @@
 	}
 
 	#profile-img {
-		display: none;
+		right: 2%;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	#about-prog-container {
+		padding-top: 50px;
+		height: 88vh;
+	}
+
+	#programming-img {
+		width: 276px;
+		height: 230px;
+		margin-left: 10px;
 	}
 }
 
@@ -709,6 +737,14 @@
 	#upper-footer {
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+
+	#profile-img {
+		display: none;
+	}
+
+	#programming-img {
+		display: none;	
 	}
 }
 
