@@ -19,11 +19,29 @@ var projectData = [
 		category: "Andoird template",
 		title: "CurrentC Converter",
 		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+	},
+	{
+		image: "../images/HushUp.png",
+		category: "Andoird App",
+		title: "Hush Up",
+		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+	},
+	{
+		image: "../images/TicTacToe.png",
+		category: "Andoird app",
+		title: "Tic Tac Toe",
+		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+	},
+	{
+		image: "../images/ToDoList.png",
+		category: "Web app",
+		title: "TO-DO List",
+		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
 	}
 ];
 
 function seedData() {
-	// Removing old data
+	// Removing old dataDoList
 	Project.remove({}, function(err) {
 		if (err) {
 			console.log(err);

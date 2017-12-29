@@ -39,6 +39,7 @@ function init() {
 			break;
 		case "t":
 			projectsSide.classList.add("overlay-active");
+			break;
 		case "c":
 			contactSide.classList.add("overlay-active");
 			break;
