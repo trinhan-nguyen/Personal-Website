@@ -4,10 +4,10 @@
   "description": "Just a personal website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Nhan Tri Nguyen",
   "license": "ISC",
   "dependencies": {
     "aos": "^2.2.0",
