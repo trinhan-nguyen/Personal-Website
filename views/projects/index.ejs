@@ -19,7 +19,7 @@
 	 	<div class="card" data-aos="fade-down" data-aos-once="true">
 		    <div id="img-container">
 		    	<img class="card-img-top img-fluid" src="<%= project.image %>" alt="Card image cap" align="middle">
-		    	<div class="img-overlay"></div>
+		    	<a href="<%= project.url %>"><div class="img-overlay"></div></a>		    
 		    </div>
 		    <div class="card-block">
 		      <h3 class="card-category"><%= project.category %></h3>
@@ -28,23 +28,7 @@
 		      <p class="card-text"><%= project.content %></p>
 		    </div>
 	  	</div>
-	  	<% }); %>
-
-	  	<% projects.forEach(function(project) {%>
-	 	<div class="card" data-aos="fade-down" data-aos-once="true">
-		    <div id="img-container">
-		    	<img class="card-img-top img-fluid" src="<%= project.image %>" alt="Card image cap" align="middle">
-		    	<div class="img-overlay"></div>
-		    </div>
-		    <div class="card-block">
-		      <h3 class="card-category"><%= project.category %></h3>
-		      <h3 class="card-title"><%= project.title %></h3>
-		      <div class="card-hr"></div>
-		      <p class="card-text"><%= project.content %></p>
-		    </div>
-	  	</div>
-	  	<% }); %>
-	 
+	  	<% }); %>	 
 	</div>
 </div>
 
