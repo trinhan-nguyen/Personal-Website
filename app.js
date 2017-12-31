@@ -6,7 +6,7 @@ var Project = require("./models/project"),
 	app = express();
 
 // App config
-mongoose.connect("mongodb://localhost/personal_website");
+mongoose.connect("mongodb://ngtrnhan1205:123456789@ds239047.mlab.com:39047/promise");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
