@@ -31,7 +31,7 @@ function init() {
 	removeSideActive();	
 	var currentUrl = window.location.href.toString();
 	switch (currentUrl[currentUrl.length - 2]) {
-		case "0":
+		case "m":
 			homeSide.classList.add("overlay-active");
 			break;
 		case "u":
