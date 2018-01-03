@@ -403,7 +403,7 @@
 
 #programming-img {
 	float: left;
-	margin: 10px 10px;	
+	margin: 10px 0px;	
 	margin-left: 50px;
 	width: 360px;
 	height: 300px;
@@ -685,7 +685,7 @@
 	}
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 895px) {
 	#about-prog-container {
 		padding-top: 50px;
 		height: 88vh;
