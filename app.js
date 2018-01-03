@@ -7,6 +7,7 @@ var Project = require("./models/project"),
 
 // App config
 mongoose.connect("mongodb://ngtrnhan1205:123456789@ds239047.mlab.com:39047/promise");
+// mongoose.connect("mongodb://localhost/yelp_camp_v10");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
