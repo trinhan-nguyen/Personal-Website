@@ -6,42 +6,42 @@ var projectData = [
 		image: "../images/RGBGame.png",
 		category: "Web Game",
 		title: "The RGB Game",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "RGB color model is widely used in electronic systems. This simple game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
 		url: "https://github.com/nhan-tri-nguyen/RGBGame"
 	},
 	{
 		image: "../images/MikkoCompression.png",
 		category: "Offline Script",
 		title: "Mikko Compression",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "Nhat Nguyen and Thao Tran found that rolling through repetitive slides when studying is annoying. They suggested me create a tool for that. Consequently, MikkoCompression was born.",
 		url: "https://github.com/nhan-tri-nguyen/MikkoCompression"
 	},
 	{
 		image: "../images/CurrentCConverter.png",
-		category: "Andoird App",
+		category: "Android App",
 		title: "CurrentC Converter",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "This is my very first Android App. Since I developed this app while acquiring new knowledge, this app acts  more like an Android template than a functional app.",
 		url: "https://github.com/nhan-tri-nguyen/CurrentCConverter"
 	},
 	{
 		image: "../images/HushUp.png",
-		category: "Andoird App",
+		category: "Android App",
 		title: "Hush Up",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "Getting tired of phones ringing in the middle of the class, Hush Up was invented to hush phones up. Using Google Geofences, Hush Up turns phones into silent mode when entering predeterminate zones",
 		url: "https://github.com/nhan-tri-nguyen/HushUp"
 	},
 	{
 		image: "../images/TicTacToe.png",
-		category: "Andoird App",
+		category: "Android App",
 		title: "Tic Tac Toe",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "Tic-Tac-Toe is just a simple but well-known game. Two players take turns marking a 3x3 grid with X and O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game",
 		url: "https://github.com/nhan-tri-nguyen"
 	},
 	{
 		image: "../images/ToDoList.png",
 		category: "Web App",
 		title: "TO-DO List",
-		content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+		content: "TO-DO List is a single page web app. The app allows people to make their to-do list with nice and clean user interfaces",
 		url: "https://github.com/nhan-tri-nguyen/TodoList"
 	}
 ];
