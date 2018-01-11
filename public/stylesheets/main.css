@@ -4,7 +4,7 @@
 			rgba(10, 10, 30, 0.5),
 			rgba(10, 10, 30, 0.5)
 		),
-		url(../images/backgroundOthers.jpg);
+		url(../images/backgroundOthers.webp);
 	background-size: cover;
 	background-position: bottom;
 	height: 90vh;
@@ -328,7 +328,7 @@
 		180deg, 
 		hsla(0, 0%, 100%, .9), 
 		hsla(0, 0%, 100%, .8)), 
-	url(../images/profile.jpg);
+	url(../images/profile.webp);
 	background-size: 900px 1000px;
 	background-repeat: no-repeat;
 	background-position: top;
@@ -409,7 +409,7 @@
 	height: 300px;
 	border: solid white 5px;
 	box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-	background: url(../images/programming.jpg);
+	background: url(../images/programming.webp);
 	background-size: cover;
 	background-position: center;
 }
@@ -441,7 +441,7 @@
 			rgba(10, 10, 30, 0.5),
 			rgba(10, 10, 30, 0.5)
 		),
-		url(../images/get-in-touch.jpg);
+		url(../images/get-in-touch.webp);
 	background-position: center;
 	background-size: cover;
 }
@@ -462,7 +462,7 @@
 			rgba(10, 10, 30, 0.6),
 			rgba(10, 10, 30, 0.6)
 		),
-		url(../images/background.jpg);
+		url(../images/background.webp);
 	background-size: cover;
 	height: 100vh;
 }
