@@ -10,7 +10,6 @@ var timeouts = [],
 	projects = $("#projects").get(0),
 	inspiration = $("#inspiration").get(0),
 	contact = $("#contact").get(0),
-	headerOverlay = $(".header-overlay").get(0),
 	headerData = [
 		{
 			section: "About me",
@@ -65,7 +64,6 @@ function removeAnimationClass() {
 	intro.classList.remove("content-in");
 	detail.classList.remove("content-in");
 	learnMore.classList.remove("btn-in");
-	headerOverlay.style.display = "none";
 }
 
 function clearTimeOut() {
@@ -86,27 +84,23 @@ animate();
 function animate() {
 	displayNone();
 	clearTimeOut();
-	headerOverlay.style.display = "block";
-	headerOverlay.classList.add("overlay-in");
 	timeouts.push(setTimeout(function() {
 		section.classList.toggle("content-in");
 		section.style.display = "inline-block";
-	}, 300));	
+	}, 30));	
 	timeouts.push(setTimeout(function() {
 		intro.classList.toggle("content-in");
 		detail.classList.toggle("content-in");
 		intro.style.display = "block";
 		detail.style.display = "block";
-		headerOverlay.style.display = "none";
-	}, 1000));
+	}, 600));
 	timeouts.push(setTimeout(function() {
 		learnMore.classList.toggle("btn-in");
 		learnMore.style.display = "inline-block";
-	}, 1700));
+	}, 1200));
 	timeouts.push(setTimeout(function() {
 		removeAnimationClass();
-		headerOverlay.classList.remove("overlay-in");
-	}, 2200));
+	}, 1800));
 }
 
 function updateText(fromSection) {
