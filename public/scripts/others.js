@@ -31,14 +31,12 @@ function animate() {
 	headerOverlay.style.display = "block";
 	headerOverlay.classList.add("overlay-in");
 	timeouts.push(setTimeout(function() {
-		intro.classList.toggle("content-in");
-		intro.style.display = "block";
 		headerOverlay.style.display = "none";
-	}, 500));
-	timeouts.push(setTimeout(function() {
 		detail.classList.toggle("content-in");
 		detail.style.display = "block";
-	}, 1000));
+		intro.classList.toggle("content-in");
+		intro.style.display = "block";
+	}, 1200));
 	timeouts.push(setTimeout(function() {
 		removeAnimationClass();
 		headerOverlay.classList.remove("overlay-in");
