@@ -13,7 +13,7 @@ var menuOn = false,
 
 function menuResize() {
 	if ($(window).width() <= 767) {
-		menu.style.width = "50%";
+		menu.style.width = "60%";
 	}
 	else {
 		menu.style.width = "33%";

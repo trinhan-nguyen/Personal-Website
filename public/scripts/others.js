@@ -1,31 +1,10 @@
 //****************
 // Initial config
 //****************
-var timeouts = [],
-	intro = $("#intro").get(0),
+var intro = $("#intro").get(0),
 	detail = $("#detail").get(0);
 
-function displayNone() {
-	intro.style.display = "none";
-	detail.style.display = "none";
-}
-
-function removeAnimationClass() {
-	intro.classList.remove("content-in");
-	detail.classList.remove("content-in");
-}
-
-function clearTimeOut() {
-	for (var i = 0; i < timeouts.length; ++i) {
-		clearTimeout(timeouts[i]);
-	}
-	timeouts = [];
-	removeAnimationClass();
-}
-
 function animate() {
-	displayNone();
-	clearTimeOut();
 	detail.classList.toggle("content-in");
 	detail.style.display = "block";
 	intro.classList.toggle("content-in");
