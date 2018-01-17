@@ -6,8 +6,7 @@ var Project = require("./models/project"),
 	app = express();
 
 // App config
-// mongoose.connect("mongodb://ngtrnhan1205:123456789@ds239047.mlab.com:39047/promise");
-mongoose.connect("mongodb://localhost/yelp_camp_v10");
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v10");
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -51,7 +50,6 @@ app.get("/*", function(req, res) {
 });
 
 // Server config
-app.listen(3000, function() {
-// app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(process.env.PORT || 3000, process.env.IP, function() {
 	console.log("Server started");
 });
