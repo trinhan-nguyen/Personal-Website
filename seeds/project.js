@@ -7,7 +7,7 @@ var projectData = [
 		category: "Web Game",
 		title: "The RGB Game",
 		content: "RGB color model is widely used in electronic systems. The RGB game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
-		url: "https://github.com/nhan-tri-nguyen/RGBGame"
+		url: "https://nhan-tri-nguyen.github.io/RGBGame/"
 	},
 	{
 		image: "../images/MikkoCompression.webp",
