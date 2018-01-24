@@ -35,7 +35,7 @@ var projectData = [
 		category: "Android App",
 		title: "Tic Tac Toe",
 		content: "Tic-Tac-Toe is just a simple but well-known game. Two players take turns marking a 3x3 grid with X and O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game",
-		url: "https://github.com/nhan-tri-nguyen"
+		url: "https://nhan-tri-nguyen.github.io/TicTacToe/"
 	},
 	{
 		image: "../images/ToDoList.webp",
