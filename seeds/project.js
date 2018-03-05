@@ -34,7 +34,7 @@ var projectData = [
 		image: "../images/TicTacToe.webp",
 		category: "Android App",
 		title: "Tic Tac Toe",
-		content: "Tic-Tac-Toe is just a simple but well-known game. Two players take turns marking a 3x3 grid with X and O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game",
+		content: "Tic-Tac-Toe is just a simple but well-known game. This app uses React.js to save states so that we can go back and forth between states.",
 		url: "https://nhan-tri-nguyen.github.io/TicTacToe/"
 	},
 	{
@@ -42,7 +42,7 @@ var projectData = [
 		category: "Web App",
 		title: "TO-DO List",
 		content: "TO-DO List is a single page web app. The app allows people to make their to-do list with nice and clean user interfaces",
-		url: "https://github.com/nhan-tri-nguyen/TodoList"
+		url: "https://nhan-tri-nguyen.github.io/To-DoList/"
 	}
 ];
 
