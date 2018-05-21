@@ -10,19 +10,35 @@
 	<div id="tab-menu">
 		<div class="row">
 			<button class="col-md-3 col-sm-12 col-xs-12 tab-menu-obj" id="about-me">
-				<img src="/images/about-me.webp" class="icon" width="40" height="40">
+				<picture class="icon">
+					<source srcset="/images/about-me.webp" type="image/webp">
+					<source srcset="/images/about-me.png" type="image/png">
+					<img src="/images/about-me.png" width="40" height="40">
+				</picture>
 				<h3 id="tab-menu-header">About Me</h3>
 			</button>	
 			<button class="col-md-3 col-sm-12 col-xs-12 tab-menu-obj" id="projects">
-				<img src="/images/projects.webp" class="icon" width="40" height="40">
+				<picture>
+					<source srcset="/images/projects.webp" type="image/webp">
+					<source srcset="/images/projects.png" type="image/png">
+					<img src="/images/projects.png" class="icon" width="40" height="40">
+				</picture>
 				<h3 id="tab-menu-header">Projects</h3>
 			</button>	
 			<button class="col-md-3 col-sm-12 col-xs-12 tab-menu-obj" id="inspiration">
-				<img src="/images/inspiration.webp" class="icon" width="40" height="40">
+				<picture>
+					<source srcset="/images/inspiration.webp" type="image/webp">
+					<source srcset="/images/inspiration.png" type="image/png">
+					<img src="/images/inspiration.png" class="icon" width="40" height="40">
+				</picture>
 				<h3 id="tab-menu-header">Inspiration?</h3>
 			</button>	
 			<button class="col-md-3 col-sm-12 col-xs-12 tab-menu-obj" id="contact">
-				<img src="/images/contact.webp" class="icon" width="40" height="40">
+				<picture>
+					<source srcset="/images/contact.webp" type="image/webp">
+					<source srcset="/images/contact.png" type="image/png">
+					<img src="/images/contact.png" class="icon" width="40" height="40">
+				</picture>
 				<h3 id="tab-menu-header">Contact</h3>
 			</button>	
 		</div>
@@ -42,7 +58,11 @@
 		<% projects.slice(0, 6).forEach(function(project) {%>
 	 	<div class="card" data-aos="fade-down" data-aos-once="true">
 		    <div id="img-container">
-		    	<img class="card-img-top img-fluid" src="<%= project.image %>" alt="Card image cap" align="middle">
+		    	<picture>
+		    		<source srcset="<%= project.image %>" type="image/webp">
+		    		<source srcset="<%= project.imageFallBack %>" type="image/png">
+		    		<img class="card-img-top img-fluid" src="<%= project.imageFallBack %>" alt="Card image cap" align="middle">
+		    	</picture>
 		    	<a href="<%= project.url %>"><div class="img-overlay"></div></a>
 		    </div>
 		    <div class="card-block">
