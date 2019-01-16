@@ -14,7 +14,7 @@ var timeouts = [],
 		{
 			section: "About me",
 			intro: "Hello. I'm Nhan Nguyen",
-			detail: "Warm greetings to you all from Nhan Nguyen",
+			detail: "Warm greeting from Nhan Nguyen",
 			button: "Learn more",
 			href: "/about"
 		},
@@ -151,7 +151,4 @@ $("#contact").click(function() {
 	contact.classList.add("active");
 	updateText(3);
 });
-
-
-
 
