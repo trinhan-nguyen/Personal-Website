@@ -17,6 +17,22 @@ var projectData = [
 		content: "Code Aggregator (created by Nhat Nguyen) is a leaderboard that encourages solving computational problems amongst friends by tracking solved problems every hour as well as suggesting visualizing related questions.",
 		url: "http://leetcode-fe.azurewebsites.net"
     },
+    {
+		image: "../images/EasyNoter.webp",
+		imageFallBack: "../images/EasyNoter.png",
+		category: "Android App",
+        title: "Easy Noter",
+        content: "Easy Noter is a simple note-taking app that employs MVVM design pattern.",
+		url: "https://nhan-tri-nguyen.github.io/EasyNoter/"
+    },
+    {
+		image: "../images/TicTacToe.webp",
+		imageFallBack: "../images/TicTacToe.png",
+		category: "Web Game",
+		title: "Tic Tac Toe",
+		content: "Tic-Tac-Toe is just a simple but well-known game. This app uses React.js to save states so that we can go back and forth between states.",
+		url: "https://nhan-tri-nguyen.github.io/TicTacToe/"
+	},
 	{
 		image: "../images/RGBGame.webp",
 		imageFallBack: "../images/RGBGame.png",
@@ -24,14 +40,6 @@ var projectData = [
 		title: "The RGB Game",
 		content: "RGB color model is widely used in electronic systems. The RGB game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
 		url: "https://nhan-tri-nguyen.github.io/RGBGame/"
-	},
-	{
-		image: "../images/MikkoCompression.webp",
-		imageFallBack: "../images/MikkoCompression.png",
-		category: "Offline Script",
-		title: "Mikko Compression",
-		content: "Nhat Nguyen and Thao Tran found that rolling through repetitive slides when studying is annoying. They suggested creating a tool to fix that. Consequently, Mikko Compression was born.",
-		url: "https://github.com/nhan-tri-nguyen/MikkoCompression"
 	},
 	{
 		image: "../images/CurrentCConverter.webp",
@@ -50,20 +58,20 @@ var projectData = [
 		url: "https://github.com/nhan-tri-nguyen/HushUp"
 	},
 	{
-		image: "../images/TicTacToe.webp",
-		imageFallBack: "../images/TicTacToe.png",
-		category: "Web Game",
-		title: "Tic Tac Toe",
-		content: "Tic-Tac-Toe is just a simple but well-known game. This app uses React.js to save states so that we can go back and forth between states.",
-		url: "https://nhan-tri-nguyen.github.io/TicTacToe/"
-	},
-	{
 		image: "../images/ToDoList.webp",
 		imageFallBack: "../images/ToDoList.png",
 		category: "Web App",
 		title: "TO-DO List",
 		content: "TO-DO List is a single page web app. The app allows people to make their to-do list with nice and clean user interfaces",
 		url: "https://nhan-tri-nguyen.github.io/To-DoList/"
+	},
+	{
+		image: "../images/MikkoCompression.webp",
+		imageFallBack: "../images/MikkoCompression.png",
+		category: "Offline Script",
+		title: "Mikko Compression",
+		content: "Nhat Nguyen and Thao Tran found that rolling through repetitive slides when studying is annoying. They suggested creating a tool to fix that. Consequently, Mikko Compression was born.",
+		url: "https://github.com/nhan-tri-nguyen/MikkoCompression"
 	}
 ];
 
