@@ -7,7 +7,7 @@ var projectData = [
 		imageFallBack: "../images/Biquadris.png",
 		category: "Terminal Game",
 		title: "Biquadris",
-        content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately. Since Biquadris is a CS246 assignment, no link will be provided.",
+        content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately.",
 		url: "http://nhan-tri-nguyen.herokuapp.com/projects"
     },
 	{
