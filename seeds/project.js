@@ -3,15 +3,15 @@ var Project = require("../models/project"),
 
 var projectData = [
     {
-		image: "../images/biquadris.webp",
-		imageFallBack: "../images/biquadris.png",
+		image: "../images/Biquadris.webp",
+		imageFallBack: "../images/Biquadris.png",
 		category: "Terminal Game",
 		title: "Biquadris",
         content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately. Since Biquadris is a CS246 assignment, no link will be provided.",
     },
 	{
-		image: "../images/code-aggregator.webp",
-		imageFallBack: "../images/code-aggregator.png",
+		image: "../images/CodeAggregator.webp",
+		imageFallBack: "../images/CodeAggregator.png",
 		category: "Web App",
 		title: "Code Aggregator",
 		content: "Code Aggregator (created by Nhat Nguyen) is a leaderboard that encourages solving computational problems amongst friends by tracking solved problems every hour as well as suggesting visualizing related questions.",
