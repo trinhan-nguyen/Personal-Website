@@ -3,14 +3,6 @@ var Project = require("../models/project"),
 
 var projectData = [
     {
-		image: "../images/Biquadris.webp",
-		imageFallBack: "../images/Biquadris.png",
-		category: "Terminal Game",
-		title: "Biquadris",
-        content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately.",
-		url: "http://nhan-tri-nguyen.herokuapp.com/projects"
-    },
-	{
 		image: "../images/CodeAggregator.webp",
 		imageFallBack: "../images/CodeAggregator.png",
 		category: "Web App",
@@ -18,6 +10,16 @@ var projectData = [
 		content: "Code Aggregator (created by Nhat Nguyen) is a leaderboard that encourages solving computational problems amongst friends by tracking solved problems as well as suggesting visualizing related questions.",
 		url: "http://leetcode-fe.azurewebsites.net"
     },
+
+    {
+		image: "../images/Biquadris.webp",
+		imageFallBack: "../images/Biquadris.png",
+		category: "Terminal Game",
+		title: "Biquadris",
+        content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately.",
+		url: "http://nhan-tri-nguyen.herokuapp.com/projects"
+    },
+
     {
 		image: "../images/EasyNoter.webp",
 		imageFallBack: "../images/EasyNoter.png",
@@ -26,6 +28,7 @@ var projectData = [
         content: "Easy Noter is a simple note-taking app that employs MVVM design pattern.",
 		url: "https://nhan-tri-nguyen.github.io/EasyNoter/"
     },
+
     {
 		image: "../images/TicTacToe.webp",
 		imageFallBack: "../images/TicTacToe.png",
@@ -34,6 +37,7 @@ var projectData = [
 		content: "Tic-Tac-Toe is just a simple but well-known game. This app uses React.js to save states so that we can go back and forth between states.",
 		url: "https://nhan-tri-nguyen.github.io/TicTacToe/"
 	},
+
 	{
 		image: "../images/RGBGame.webp",
 		imageFallBack: "../images/RGBGame.png",
@@ -42,6 +46,7 @@ var projectData = [
 		content: "RGB color model is widely used in electronic systems. The RGB game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
 		url: "https://nhan-tri-nguyen.github.io/RGBGame/"
 	},
+
 	{
 		image: "../images/CurrentCConverter.webp",
 		imageFallBack: "../images/CurrentCConverter.png",
@@ -50,6 +55,7 @@ var projectData = [
 		content: "CurrentC Converter is my very first Android App. Since I developed this app while acquiring new knowledge, this app acts  more like an Android template than a functional app.",
 		url: "https://github.com/nhan-tri-nguyen/CurrentCConverter"
 	},
+
 	{
 		image: "../images/HushUp.webp",
 		imageFallBack: "../images/HushUp.png",
@@ -58,6 +64,7 @@ var projectData = [
 		content: "Getting tired of phones ringing in the middle of the class, Hush Up was invented to hush phones up. Using Google Geofences, Hush Up turns phones into silent mode when entering predeterminate zones",
 		url: "https://github.com/nhan-tri-nguyen/HushUp"
 	},
+
 	{
 		image: "../images/ToDoList.webp",
 		imageFallBack: "../images/ToDoList.png",
@@ -66,6 +73,7 @@ var projectData = [
 		content: "TO-DO List is a single page web app. The app allows people to make their to-do list with nice and clean user interfaces",
 		url: "https://nhan-tri-nguyen.github.io/To-DoList/"
 	},
+
 	{
 		image: "../images/MikkoCompression.webp",
 		imageFallBack: "../images/MikkoCompression.png",
