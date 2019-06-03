@@ -19,16 +19,6 @@ var projectData = [
         content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately.",
 		url: "http://nhan-tri-nguyen.herokuapp.com/projects"
     },
-
-    {
-		image: "../images/EasyNoter.webp",
-		imageFallBack: "../images/EasyNoter.png",
-		category: "Android App",
-        title: "Easy Noter",
-        content: "Easy Noter is a simple note-taking app that employs MVVM design pattern.",
-        url: "https://github.com/tri-nhan-nguyen/EasyNoter"
-    },
-
     {
 		image: "../images/TicTacToe.webp",
 		imageFallBack: "../images/TicTacToe.png",
@@ -73,6 +63,15 @@ var projectData = [
 		content: "TO-DO List is a single page web app. The app allows people to make their to-do list with nice and clean user interfaces",
 		url: "https://tri-nhan-nguyen.github.io/To-DoList/"
 	},
+
+    {
+		image: "../images/EasyNoter.webp",
+		imageFallBack: "../images/EasyNoter.png",
+		category: "Android App",
+        title: "Easy Noter",
+        content: "Easy Noter is a simple note-taking app that employs MVVM design pattern.",
+        url: "https://github.com/tri-nhan-nguyen/EasyNoter"
+    },
 
 	{
 		image: "../images/MikkoCompression.webp",
