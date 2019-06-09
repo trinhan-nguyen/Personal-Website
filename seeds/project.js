@@ -19,6 +19,17 @@ var projectData = [
         content: "Biquadris is a Tetris-like game with 2 players. Biquadris made use of multiple design patterns including MVC, Factory Method, Observer, Decorator appropriately.",
 		url: "http://nhan-tri-nguyen.herokuapp.com/projects"
     },
+
+	{
+		image: "../images/ConwayGameOfLife.webp",
+		imageFallBack: "../images/ConwayGameOfLife.png",
+		category: "Zero-player game",
+		title: "Conway Game of Life",
+        content: "Conway Game of Life is a zero-player game invented by John Horton Conway in 1970. The application is written in Rust and compiled to Web Assembly so it can be run on browsers",
+        url: "https://github.com/tri-nhan-nguyen/ConwayGameOfLife"
+	},
+
+
     {
 		image: "../images/TicTacToe.webp",
 		imageFallBack: "../images/TicTacToe.png",
@@ -26,15 +37,6 @@ var projectData = [
 		title: "Tic Tac Toe",
 		content: "Tic-Tac-Toe is just a simple but well-known game. This app uses React.js to save states so that we can go back and forth between states.",
 		url: "https://tri-nhan-nguyen.github.io/TicTacToe/"
-	},
-
-	{
-		image: "../images/RGBGame.webp",
-		imageFallBack: "../images/RGBGame.png",
-		category: "Web Game",
-		title: "The RGB Game",
-		content: "RGB color model is widely used in electronic systems. The RGB game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
-		url: "https://tri-nhan-nguyen.github.io/RGBGame/"
 	},
 
 	{
@@ -53,6 +55,15 @@ var projectData = [
 		title: "Hush Up",
 		content: "Getting tired of phones ringing in the middle of the class, Hush Up was invented to hush phones up. Using Google Geofences, Hush Up turns phones into silent mode when entering predeterminate zones",
 		url: "https://github.com/nhan-tri-nguyen/HushUp"
+	},
+
+	{
+		image: "../images/RGBGame.webp",
+		imageFallBack: "../images/RGBGame.png",
+		category: "Web Game",
+		title: "The RGB Game",
+		content: "RGB color model is widely used in electronic systems. The RGB game aims to practice color detection in RGB moddel by choosing the color that matches a given RGB code.",
+		url: "https://tri-nhan-nguyen.github.io/RGBGame/"
 	},
 
 	{
