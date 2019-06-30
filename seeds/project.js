@@ -3,6 +3,15 @@ var Project = require("../models/project"),
 
 var projectData = [
     {
+		image: "../images/FriendlyChat.webp",
+		imageFallBack: "../images/FriendlyChat.png",
+		category: "Flutter App",
+		title: "Friendly Chat",
+		content: "Friendly Chat is a cross-platform real-time messaging app built with Flutter and Firebase",
+		url: "https://medium.com/@ngtrnhan1205/flutter-friendly-chat-app-a-simple-real-time-chat-app-c6519a604681"
+    },
+
+    {
 		image: "../images/CodeAggregator.webp",
 		imageFallBack: "../images/CodeAggregator.png",
 		category: "Web App",
