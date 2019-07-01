@@ -32,7 +32,7 @@ var projectData = [
 	{
 		image: "../images/ConwayGameOfLife.webp",
 		imageFallBack: "../images/ConwayGameOfLife.png",
-		category: "Zero-player game",
+		category: "Zero-player Game",
 		title: "Conway Game of Life",
         content: "Conway Game of Life is a zero-player game invented by John Horton Conway in 1970. The application is written in Rust and compiled to Web Assembly so it can be run on browsers",
         url: "https://github.com/tri-nhan-nguyen/ConwayGameOfLife"
