@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "body-parser": "^1.18.3",
+    "bson": "^4.3.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "loadash": "^1.0.0",
